@@ -17,7 +17,8 @@ Empregamos a função DIVIDE([TotalMasculino],[Totalfuncionario],0) para calcula
 Notas Importantes:
 
 Os dados utilizados estão disponíveis no repositório, garantindo transparência e replicabilidade da análise.
-Este relatório utiliza funções DAX eficazes no contexto de Recursos Humanos para fornecer insights valiosos.
+Este relatório utiliza funções DAX eficazes no contexto de Recursos Humanos para fornecer insights valiosos
+Foi utilizado powerquery para transformação dos dados.
 Visualização Gráfica:
 
 Gráfico de Barras Empilhadas:
@@ -28,5 +29,8 @@ Utilizamos a medida TotalFuncionario como valor e o dataset de disponibilidade p
 
 Gráfico de Rosca - Índice de Envolvimento no Trabalho:
 Implementamos um gráfico de rosca para analisar o total de funcionários em diferentes níveis de envolvimento no trabalho, oferecendo insights sobre a dedicação da equipe.
+foi feita manipulação do dataset "indice_envolvimento_trabalho" para alteração de numerico para categorico, alem de mudar de "1,2,3,4" para uma informação de analise de mais rapida substituindo por "ruim
 
 Essas visualizações visam proporcionar uma compreensão abrangente dos dados de Recursos Humanos, facilitando a tomada de decisões estratégicas.
+
+
