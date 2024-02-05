@@ -1,22 +1,32 @@
 # BI_RH-ANALISE
-Totalfuncionario:
 
-Utilização da função COUNTROWS(DatasetRH) para criar a medida que representa o total de funcionários. Essa medida não é originária do dataset.
-TotalFeminino:
+Total de Funcionários:
+Utilizamos a função COUNTROWS(DatasetRH) para criar a medida representando o total de funcionários, oferecendo uma visão consolidada da equipe.
 
-Aplicação da função CALCULATE([Totalfuncionario], DatasetRH[Genero] = "Feminino") para criar a medida que representa o número de funcionários do sexo feminino em relação ao total de funcionários.
-TotalMasculino:
+Distribuição de Gênero:
 
-Implementação da função CALCULATE([Totalfuncionario], DatasetRH[Genero] = "Masculino") para obter o total de funcionários masculinos em relação ao total de funcionários.
-% Masculino:
+Total Feminino:
+Aplicamos a função CALCULATE([Totalfuncionario], DatasetRH[Genero] = "Feminino") para mostrar o número de funcionárias em relação ao total, promovendo uma visão específica e detalhada.
 
-Utilização da função DIVIDE([TotalMasculino],[Totalfuncionario],0) para calcular o percentual de funcionários masculinos em relação ao total. Essa medida foi criada para uma melhor visualização e interpretação dos dados.
-Nota Importante:
-O conjunto de dados utilizado para esta análise está disponível no próprio repositório, proporcionando a transparência e a replicabilidade da análise realizada. Este relatório visa oferecer insights valiosos por meio da aplicação eficaz de funções DAX no contexto de Recursos Humanos.
+Total Masculino:
+Utilizamos a função CALCULATE([Totalfuncionario], DatasetRH[Genero] = "Masculino") para identificar o total de funcionários masculinos, permitindo uma análise comparativa com o total geral.
 
-foi feita a criação de um grafico de barras empilhadas para facilitar a vizualização dos dados 
+Percentual Masculino:
+Empregamos a função DIVIDE([TotalMasculino],[Totalfuncionario],0) para calcular o percentual de funcionários masculinos em relação ao total, proporcionando uma compreensão rápida da distribuição de gênero na equipe.
 
-criação de um grafico de pizza utilizando a medida criada de Totaluncionario como valor e o dataset de disponivel para hora extra como legenda para obter um grafico percentual foi feito um tratamento dos dados para facilitar a vizualização por parte do gestor trocando os valores "S E N" ORIGINARIOS Do datset para "Sim e Não"
+Notas Importantes:
 
-Criei um Grafico de rosca para analisar o total de funcionarios por indice de envolvimento no trabalho
-  
+Os dados utilizados estão disponíveis no repositório, garantindo transparência e replicabilidade da análise.
+Este relatório utiliza funções DAX eficazes no contexto de Recursos Humanos para fornecer insights valiosos.
+Visualização Gráfica:
+
+Gráfico de Barras Empilhadas:
+Criamos um gráfico para visualizar a distribuição de gênero de maneira clara e comparativa.
+
+Gráfico de Pizza:
+Utilizamos a medida TotalFuncionario como valor e o dataset de disponibilidade para hora extra como legenda. Realizamos tratamento nos dados para substituir "S E N" por "Sim e Não", facilitando a compreensão do gestor.
+
+Gráfico de Rosca - Índice de Envolvimento no Trabalho:
+Implementamos um gráfico de rosca para analisar o total de funcionários em diferentes níveis de envolvimento no trabalho, oferecendo insights sobre a dedicação da equipe.
+
+Essas visualizações visam proporcionar uma compreensão abrangente dos dados de Recursos Humanos, facilitando a tomada de decisões estratégicas.
